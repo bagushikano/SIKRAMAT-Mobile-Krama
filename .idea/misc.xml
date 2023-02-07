@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.4889466840052016" />
+        <entry key="app/src/main/res/drawable/ic_login_blob.xml" value="0.197" />
+        <entry key="app/src/main/res/layout/activity_cacah_krama_detail.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_cacah_krama_edit.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_cacah_krama_edit_foto.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_cacah_krama_edit_location.xml" value="0.3365036231884058" />
+        <entry key="app/src/main/res/layout/activity_cacah_krama_mipil_detail.xml" value="0.2838541666666667" />
+        <entry key="app/src/main/res/layout/activity_cacah_krama_tamiu_detail.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/activity_cacah_mipil_detail.xml" value="0.2838541666666667" />
+        <entry key="app/src/main/res/layout/activity_cacah_tamiu_detail.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/activity_datang_keluar_ajuan_baru.xml" value="0.3365036231884058" />
+        <entry key="app/src/main/res/layout/activity_datang_keluar_pengajuan.xml" value="0.3365036231884058" />
+        <entry key="app/src/main/res/layout/activity_document_viewer.xml" value="0.3541666666666667" />
+        <entry key="app/src/main/res/layout/activity_edit_password.xml" value="0.33695652173913043" />
+        <entry key="app/src/main/res/layout/activity_email_verification.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/activity_forgot.xml" value="0.34103260869565216" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_ajuan_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_detail.xml" value="0.33695652173913043" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan.xml" value="0.26685393258426965" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan_baru.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan_baru_complete.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan_baru_next.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan_baru_sukses.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan_detail.xml" value="0.34556159420289856" />
+        <entry key="app/src/main/res/layout/activity_kelahiran_pengajuan_history.xml" value="0.34556159420289856" />
+        <entry key="app/src/main/res/layout/activity_kematian_ajuan_detail.xml" value="0.337469482421875" />
+        <entry key="app/src/main/res/layout/activity_kematian_detail.xml" value="0.3038949275362319" />
+        <entry key="app/src/main/res/layout/activity_kematian_pengajuan.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_kematian_pengajuan_baru.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_kematian_pengajuan_baru_complete.xml" value="0.3541666666666667" />
+        <entry key="app/src/main/res/layout/activity_kematian_pengajuan_baru_next.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_krama_mipil_detail.xml" value="0.34556159420289856" />
+        <entry key="app/src/main/res/layout/activity_krama_mipil_kartu.xml" value="0.307518115942029" />
+        <entry key="app/src/main/res/layout/activity_krama_tamiu_detail.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/activity_krama_view_model.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register_check.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_register_complete.xml" value="0.34103260869565216" />
+        <entry key="app/src/main/res/layout/anggota_krama_mipil_card_layout.xml" value="0.34556159420289856" />
+        <entry key="app/src/main/res/layout/anggota_krama_tamiu_card_layout.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/dropdown_menu_item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_beranda.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_kelahiran_ajuan.xml" value="0.35778985507246375" />
+        <entry key="app/src/main/res/layout/fragment_kelahiran_data.xml" value="0.35104166666666664" />
+        <entry key="app/src/main/res/layout/fragment_kematian_ajuan.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_kematian_data.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_krama.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/fragment_mutasi.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.42980132450331127" />
+        <entry key="app/src/main/res/layout/kelahiran_pengajuan_card_layout.xml" value="0.3651041666666667" />
+        <entry key="app/src/main/res/layout/kematian_list_card_layout.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/notifikasi_list_card_layout.xml" value="0.5500618046971569" />
+        <entry key="app/src/main/res/menu/home_bottom_navigation.xml" value="0.5" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.226" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

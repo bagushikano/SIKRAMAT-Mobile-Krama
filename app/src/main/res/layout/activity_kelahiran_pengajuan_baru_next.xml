@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.mutasi.kelahiran.KelahiranPengajuanBaruNextActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".activity.HomeActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/home_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                app:title="Pengajuan Kelahiran"
+                app:titleTextAppearance="@style/TextAppearance.App.AppBarTitle" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pengajuan Kelahiran"
+                            android:layout_marginBottom="8dp"
+                            android:textAppearance="?attr/textAppearanceHeadline5"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Masukkan identitas anak untuk menyelesaikan pengajuan kelahiran anak."
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/username_member_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:strokeColor="@color/card_stroke_color"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:text="Foto"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:visibility="visible"
+                            android:id="@+id/kelahiran_pengajuan_foto_image"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/paceholder_krama_pict"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:strokeColor="@color/white"
+                            app:strokeWidth="0dp" />
+
+                        <Button
+                            android:id="@+id/kelahiran_pengajuan_profile_pict_select_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="12dp"
+                            android:animateLayoutChanges="true"
+                            android:text="Pilih Foto"
+                            app:icon="@drawable/ic_outline_insert_photo_24"
+                            app:iconGravity="textStart" />
+
+                        <Button
+                            android:id="@+id/kelahiran_pengajuan_profile_pict_capture_button"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:animateLayoutChanges="true"
+                            android:text="Ambil dari Kamera"
+                            app:icon="@drawable/ic_outline_camera_alt_24"
+                            app:iconGravity="textStart" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/identitas_member_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/card_stroke_color"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:animateLayoutChanges="true"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:text="Nama Anak"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_nama_anak_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Masukkan nama"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib diisi"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:startIconDrawable="@drawable/ic_outline_person_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/kelahiran_pengajuan_nama_anak_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:inputType="textPersonName" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:text="Tempat Lahir"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_tempat_lahir_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Masukkan tempat lahir"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib diisi"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:startIconDrawable="@drawable/ic_outline_place_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/kelahiran_pengajuan_tempat_lahir_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:inputType="textPostalAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:text="Tanggal Lahir"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_tanggal_lahir_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Masukkan tanggal lahir"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib diisi"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:startIconDrawable="@drawable/ic_outline_calendar_today_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/kelahiran_pengajuan_tanggal_lahir_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:inputType="textPostalAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:text="Alamat"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_alamat_form"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Masukkan alamat"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib diisi"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:startIconDrawable="@drawable/ic_outline_home_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/kelahiran_pengajuan_alamat_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:inputType="textPostalAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:textStyle="bold"
+                            android:text="Jenis Kelamin"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib diisi"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_jk_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Pilih jenis kelamin"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib dipilih"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            app:startIconDrawable="@drawable/ic_outline_category_24">
+
+                            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                                android:id="@+id/kelahiran_pengajuan_jk_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:text="Golongan Darah"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_golongan_darah_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:hint="Pilih golongan darah"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib diisi"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            app:startIconDrawable="@drawable/ic_outline_bloodtype_24">
+
+                            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                                android:id="@+id/kelahiran_pengajuan_golongan_darah_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:text="Keterangan"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_keterangan_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:hint="Masukkan keterangan"
+                            app:helperTextEnabled="true"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:startIconDrawable="@drawable/ic_outline_description_24">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/kelahiran_pengajuan_keterangan_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:inputType="textPostalAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Orang Tua Anak"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceBody1" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/card_stroke_color"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:animateLayoutChanges="true"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="12dp"
+                            android:text="Ayah"
+                            android:textStyle="bold"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_ayah_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:hint="Pilih ayah"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib dipilih"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            app:startIconDrawable="@drawable/ic_outline_person_24">
+
+                            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                                android:id="@+id/kelahiran_pengajuan_ayah_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:textStyle="bold"
+                            android:text="Ibu"
+                            android:textAppearance="?attr/textAppearanceBody1" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/kelahiran_pengajuan_ibu_form"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginEnd="12dp"
+                            android:hint="Pilih ayah terlebih dahulu"
+                            android:enabled="false"
+                            app:helperTextEnabled="true"
+                            app:helperText="*Wajib dipilih"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            app:startIconDrawable="@drawable/ic_outline_person_24">
+
+                            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                                android:id="@+id/kelahiran_pengajuan_ibu_field"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:animateLayoutChanges="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/kelahiran_pengajuan_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ajukan"
+                    app:icon="@drawable/ic_baseline_check_24"
+                    app:iconGravity="textEnd" />
+
+                <LinearLayout
+                    android:animateLayoutChanges="true"
+                    android:id="@+id/kelahiran_pengajuan_progress_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/register_tgllahir_form">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:text="Mohon tunggu..." />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

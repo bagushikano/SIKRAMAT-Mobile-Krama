@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/navigation_beranda_guest"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="Beranda" >
+    </item>
+    <item
+        android:id="@id/navigation_produk_layanan_guest"
+        android:icon="@drawable/ic_outline_category_24"
+        android:title="Produk" >
+    </item>
+</menu>

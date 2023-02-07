@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:id="@+id/register_check_image"
+        android:src="@drawable/ic_check_animated"
+        app:tint="@color/green" />
+
+    <TextView
+        android:id="@+id/upload_kk_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Registrasi berhasil"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="4dp"
+        android:text="Silahkan login untuk dapat mulai menggunakan SiKeDat."
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?android:attr/textColorSecondary"
+        />
+
+    <Button
+        android:id="@+id/register_complete_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:text="Oke, kembali ke halaman login"
+        app:strokeColor="@color/primaryColor" />
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SIKRAMAT</string>
+    <string name="server_fail">Terjadi kesalahan, silahkan coba lagi nanti.</string>
+    <string name="image_endpoint">https://sikramat.herokuapp.com</string>
+    <string name="api_endpoint">https://sikramat.herokuapp.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login_screen_welcome_string">Selamat datang di SIKRAMAT mobile. Untuk dapat menggunakan sistem silahkan login terlebih dahulu</string>
+
+    <string name="leku_title_activity_location_picker">Pilih lokasi</string>
+    <string name="leku_load_location_error">Terjadi kesalahan, silahkan coba lagi nanti.</string>
+    <string name="leku_no_search_results">Tidak ditemukan hasil berdasarkan kata kunci</string>
+    <string name="leku_unknown_location">lokasi tidak diketahui</string>
+    <string name="leku_search_hint">Cari lokasi...</string>
+    <string name="leku_use_this_location">Gunakan lokasi ini</string>
+</resources>
